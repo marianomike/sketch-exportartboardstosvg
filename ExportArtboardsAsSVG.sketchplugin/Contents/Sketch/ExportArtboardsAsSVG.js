@@ -6,10 +6,11 @@ var onRun = function(context) {
 	//reference the pages array in the document
 	var pages = [doc pages];
 
+	//select folder where svgs will be saved
 	var file_path = selectFolder();
 
-	//export all the pngs to the folder
-	exportAllSymbols(doc, pages, file_path);
+	//export all the svgs to the folder
+	exportAllArtboards(doc, pages, file_path);
 
 	//if user doesn't press cancel, alert that the export is done
 	if(file_path != undefined){
@@ -42,19 +43,15 @@ function selectFolder(){
   }
 }
 
-function exportAllSymbols(doc, pages, file_path){
+function exportAllArtboards(doc, pages, file_path){
   //loop through the pages array
 	for (var i = 0; i < pages.count(); i++){
 
 		//reference each page
 		var page = pages[i];
 
-    //get the page name
-    var pageName = [page name];
-
+		//reference each artboard
 		var artboards = [page artboards];
-
-		log(artboards.count());
 
 		for (var z = 0; z < artboards.count(); z++){
 
