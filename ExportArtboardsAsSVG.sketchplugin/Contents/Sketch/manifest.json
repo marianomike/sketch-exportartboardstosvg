@@ -1,0 +1,27 @@
+{
+  "author" : "Mike Mariano",
+  "commands" : [
+    {
+      "script" : "ExportArtboardsAsSVG.js",
+      "handler" : "onRun",
+      "shortcut" : "ctrl shift e",
+      "name" : "Export Artboards as SVG",
+      "identifier" : "export-artboards-svg",
+    },
+  ],
+  "menu" : {
+    "title" : "Export Artboards as SVG",
+    "isRoot" : true,
+    "items" : [
+      "export-artboards-svg",
+    ],
+  },
+  "identifier" : "com.marianomike.sketch-plugin-artboards-svg",
+  "description": "Exports all or selected artboards as svg to a specified folder.",
+  "authorEmail" : "mike@uiuxartist.com",
+  "name" : "Export Artboards as SVG",
+  "homepage": "http://uiuxartist.com",
+  "version": "1.0",
+  "compatibleVersion": 3.5,
+  "bundleVersion": 1
+}
